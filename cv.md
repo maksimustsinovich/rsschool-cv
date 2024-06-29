@@ -4,21 +4,6 @@
 
 ---
 
-<details>
-<summary>Table of contents</summary>
-
-* [**Contact information**](#contact-information)
-* [**Summary**](#summary)
-* [**Education**](#education)
-* [**Skills**](#skills)
-* [**Languages**](#languages)
-* [**Code example**](#code-examples)
-* [**Pet-projects**](#pet-projects)
-
-</details>
-
----
-
 ### Contact information:
 
 Location: Minsk, Belarus<br>
