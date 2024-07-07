@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>CV</title>
+</head>
+<body>
+<div class="content-wrapper">
+    <header>
+        <nav>
+            <ul class="navigation">
+                <li>
+                    <a href="#summary">Summary</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+                <li>
+                    <a href="#education">Education</a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#languages">Languages</a>
+                </li>
+                <li>
+                    <a href="#code">Code</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="information-column">
+            <div><img src="https://avatars.githubusercontent.com/u/144668338?v=4" alt="Github avatar" class="avatar"/>
+            </div>
+            <section id="contact">
+                <h2 class="section-title">Contact</h2>
+                <ul class="information-list">
+                    <li>
+                        Location: Minsk, Belarus
+                    </li>
+                    <li>
+                        E-mail: maksimustsinovich@gmail.com
+                    </li>
+                    <li>
+                        Telegram: @noname_nonamov
+                    </li>
+                    <li>
+                        Discord: k0tlet4
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/maksim-ustsinovich-a82b12314">LinkedIn</a>
+                    </li>
+                </ul>
+            </section>
+            <section id="skills">
+                <h2 class="section-title">Skills</h2>
+                <ul class="information-list">
+                    <li>
+                        <span>Java</span>
+                    </li>
+                    <li>
+                        <span>Spring Framework</span>
+                    </li>
+                    <li>
+                        <span>JavaScript</span>
+                    </li>
+                    <li>
+                        <span>TypeScript</span>
+                    </li>
+                    <li>
+                        <span>HTML</span>
+                    </li>
+                    <li>
+                        <span>CSS</span>
+                    </li>
+                    <li>
+                        <span>React</span>
+                    </li>
+                    <li>
+                        <span>Postgres</span>
+                    </li>
+                    <li>
+                        <span>Redis</span>
+                    </li>
+                    <li>
+                        <span>MongoDB</span>
+                    </li>
+                    <li>
+                        <span>Docker</span>
+                    </li>
+                    <li>
+                        <span>Git</span>
+                    </li>
+                </ul>
+            </section>
+            <section id="languages">
+                <h2 class="section-title">Languages</h2>
+                <ul class="information-list">
+                    <li>
+                        <span>Russian</span> <span>- Native</span>
+                    </li>
+                    <li>
+                        <span>Belarusian</span> <span>- Native</span>
+                    </li>
+                    <li>
+                        <span>English</span> <span>- B1</span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div>
+            <section class="information">
+                <div>
+                    <h1>Maksim Ustsinovich</h1>
+                    <h2>Software Engineer</h2>
+                </div>
+            </section>
+            <section id="summary">
+                <h2 class="section-title">
+                    Summary
+                </h2>
+                <p class="summary">
+                    As a software engineer student,
+                    I am dedicated to developing a strong foundation in computer science and software development
+                    principles.
+                    I have experience with various development frameworks and tools.
+                    I am eager to apply my knowledge and skills to real-world problems and collaborate with others to
+                    design
+                    and implement
+                    innovative software solutions. My goal is to become a skilled and versatile software engineer who
+                    can
+                    make a positive
+                    impact in the industry.
+                </p>
+            </section>
+            <section id="education">
+                <h2 class="section-title">Education</h2>
+                <ul class="information-list">
+                    <li>
+                        <div>
+                            <p>Bachelor degree in Computer Science</p>
+                            <p>Belarusian State University of Informatics and Radio-electronics (2022-2026)</p>
+                            <p>Faculty of Computer Systems and Networks</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section id="code">
+                <h2 class="section-title">Code</h2>
+                <ul class="information-list">
+                    <li>
+                        <h3>Reverse integer</h3>
+                        <p>
+                            Given a signed 32-bit integer x, return x with its digits reversed.
+                            If reversing x causes the value to go outside the signed 32-bit integer range [-231, 231 -
+                            1], then return 0.
+                            Assume the environment does not allow you to store 64-bit integers (signed or unsigned).
+                        </p>
+                        <pre class="code-block">
+class Solution {
+
+    public int reverse(int x) {
+        long reverse = 0;
+        int temp;
+
+        while (x != 0) {
+            temp = x % 10;
+            reverse = reverse * 10 + temp;
+            x = x / 10;
+
+            if (reverse > Integer.MAX_VALUE || reverse <&nbsp;Integer.MIN_VALUE) {
+                return 0;
+            }
+        }
+
+        return (int) reverse;
+    }
+
+}</pre>
+                    </li>
+                </ul>
+            </section>
+            <section id="projects">
+                <h2 class="section-title">Projects</h2>
+                <ul class="information-list">
+                    <li>
+                        <h3><a href="https://github.com/maksimustsinovich/collaborative-editor">Collaborative editor</a>
+                        </h3>
+                        <p>
+                            A web application using tokenized document access. Collaboration is achieved using web
+                            sockets.
+                        </p>
+                        <ul>
+                            <li>
+                                Java
+                            </li>
+                            <li>
+                                Spring Framework
+                            </li>
+                            <li>
+                                Vite
+                            </li>
+                            <li>
+                                React
+                            </li>
+                            <li>
+                                TypeScript
+                            </li>
+                            <li>
+                                MongoDB
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-inner">
+            <a href="https://github.com/maksimustsinovich">Maksim Ustsinovich</a>
+            <p>2024</p>
+            <a href="https://rs.school/courses/javascript-ru"><img src="assets/rs-school-logo.svg" width="72"
+                                                                   alt="RS School"></a>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
