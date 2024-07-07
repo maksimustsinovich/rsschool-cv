@@ -2,13 +2,13 @@
 
 .main {
     display: flex;
+    flex-wrap: nowrap;
 }
 
 .footer-inner {
     display: flex;
     align-items: center;
     justify-content: space-around;
-
 }
 
 .content-wrapper {
@@ -95,10 +95,6 @@ header {
     background-color: #1F2124;
 }
 
-.github-anchor {
-    background-image: url("https://cdn-icons-png.flaticon.com/512/25/25231.png");
-}
-
 div img {
     display: block;
 }
@@ -109,5 +105,23 @@ div img {
 
 a {
     color: #D9E4ED;
+}
 
+@media (max-width: 639px) {
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+    }
 }
